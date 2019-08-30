@@ -1,10 +1,14 @@
+<!-- ファイル名の最初に_があるファイルはパーシャル（わかりやすくなる） -->
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "Attendance App", root_path, id: "logo" %>
     <nav>
+      <!--ナビゲーションリンク-->
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Top", root_path %></li>
+        <!-- 第一引数をリンク名、第二引数をリンク先のルート先に -->
         <li><%= link_to "Log in", '#' %></li>
+        <!-- ルーティングヘルパー、ビューではroot_path,コントローラではurlで -->
       </ul>
     </nav>
   </div>
