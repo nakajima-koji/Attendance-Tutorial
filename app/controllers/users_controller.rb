@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   end
   
   def show
+    @worked_sum = @attendances.where.not(started_at: nil).count
     #debugger  インスタンス変数を定義した直後にこのメソッドが実行されます。
   end
   
